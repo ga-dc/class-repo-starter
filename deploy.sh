@@ -12,10 +12,11 @@ mkdir html
 mv index.html html/index.html
 cd html
 git init
-git config user.name "${github-username-here}"
-git config user.email "${github-email-here}"
+# developer TODO: update git config with github account info
+git config user.name "#{github-username-here}"
+git config user.email "#{github-email-here}"
 
-# TODO: explain GH_TOKEN
+# developer TODO: set GH_TOKEN environment var for bash
 git remote add upstream "https://$GH_TOKEN@github.com/$1.git"
 
 touch .
